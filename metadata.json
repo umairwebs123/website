@@ -1,0 +1,6 @@
+{
+  "name": "Inner Wheel Club Sahiwal",
+  "description": "The official community website of the Inner Wheel Club of Sahiwal, Pakistan with dark and light theme options.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
