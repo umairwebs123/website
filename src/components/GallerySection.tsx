@@ -3,34 +3,40 @@ import { GalleryItem } from '../types';
 import { ChevronLeft, ChevronRight, Plus, Sparkles, Image as ImageIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
+// Static image imports for production bundling compatibility
+import vocationalCenterImg from '../assets/images/vocational_center_1780771235413.png';
+import girlEducationImg from '../assets/images/girl_education_1780771257068.png';
+import healthCampImg from '../assets/images/health_camp_1780771293659.png';
+import treePlantingImg from '../assets/images/tree_planting_1780771315705.png';
+
 const EVENTS_GALLERY: GalleryItem[] = [
   {
     id: 'g1',
     title: 'Stitching Certification Convocation',
     description: 'Celebrating 28 young women graduating from the vocational sewing center at Sahiwal. Outstanding graduates were gifted modern sewing machinery kits.',
     category: 'Empowerment',
-    imageUrl: '/src/assets/images/vocational_center_1780771235413.png',
+    imageUrl: vocationalCenterImg,
   },
   {
     id: 'g2',
     title: 'Free Mother-Child Health Clinic',
     description: 'Specialists checking infant nutritional progress and gifting critical clinical health packets and vitamins in Sahiwal rural health centers.',
     category: 'Healthcare',
-    imageUrl: '/src/assets/images/health_camp_1780771293659.png',
+    imageUrl: healthCampImg,
   },
   {
     id: 'g3',
     title: 'Sahiwal Youth Education Drive',
     description: 'Awarding merit-based scholarships, schoolbags, solar study lights, and notebooks to public primary girls at Sahiwal.',
     category: 'Youth Aid',
-    imageUrl: '/src/assets/images/girl_education_1780771257068.png',
+    imageUrl: girlEducationImg,
   },
   {
     id: 'g4',
     title: 'Neem Saplings Civic Tree Walk',
     description: 'Vanguard eco initiative planted dense shaded Neem roots alongside community trails of Farid Town, Sahiwal with local citizen assistance.',
     category: 'Environment',
-    imageUrl: '/src/assets/images/tree_planting_1780771315705.png',
+    imageUrl: treePlantingImg,
   },
 ];
 

@@ -3,6 +3,14 @@ import { Project } from '../types';
 import { Sparkles, Calendar, BookOpen, Settings, Droplet, HeartCrack, ChevronRight, Info } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
+// Static image imports for production bundling compatibility
+import vocationalCenterImg from '../assets/images/vocational_center_1780771235413.png';
+import girlEducationImg from '../assets/images/girl_education_1780771257068.png';
+import waterPlantImg from '../assets/images/water_plant_1780771277079.png';
+import healthCampImg from '../assets/images/health_camp_1780771293659.png';
+import treePlantingImg from '../assets/images/tree_planting_1780771315705.png';
+import midwiferySeminarImg from '../assets/images/midwifery_seminar_1780771335286.png';
+
 const SAMPLES_PROJECTS: Project[] = [
   {
     id: 'p1',
@@ -12,7 +20,7 @@ const SAMPLES_PROJECTS: Project[] = [
     impact: 'Provided sewing machines and tools to 60+ graduates',
     status: 'ongoing',
     date: 'Jan 2025 - Present',
-    imageUrl: '/src/assets/images/vocational_center_1780771235413.png',
+    imageUrl: vocationalCenterImg,
     imageAlt: 'Vocational center',
   },
   {
@@ -23,7 +31,7 @@ const SAMPLES_PROJECTS: Project[] = [
     impact: '85% academic progress elevation in local tests',
     status: 'ongoing',
     date: 'Aug 2024 - Continuous',
-    imageUrl: '/src/assets/images/girl_education_1780771257068.png',
+    imageUrl: girlEducationImg,
     imageAlt: 'Girl child education support',
   },
   {
@@ -34,7 +42,7 @@ const SAMPLES_PROJECTS: Project[] = [
     impact: 'Prevents waterborne pathogens for 4,550+ locals daily',
     status: 'completed',
     date: 'Dec 2024',
-    imageUrl: '/src/assets/images/water_plant_1780771277079.png',
+    imageUrl: waterPlantImg,
     imageAlt: 'Filtration plant',
   },
   {
@@ -45,7 +53,7 @@ const SAMPLES_PROJECTS: Project[] = [
     impact: 'Diagnostics and prescription drugs gifted to over 1,200 mothers',
     status: 'completed',
     date: 'Feb 2025',
-    imageUrl: '/src/assets/images/health_camp_1780771293659.png',
+    imageUrl: healthCampImg,
     imageAlt: 'Suburban health check camp',
   },
   {
@@ -56,7 +64,7 @@ const SAMPLES_PROJECTS: Project[] = [
     impact: '1,500+ saplings planted and sustained with local irrigation guard',
     status: 'ongoing',
     date: 'Oct 2024 - Present',
-    imageUrl: '/src/assets/images/tree_planting_1780771315705.png',
+    imageUrl: treePlantingImg,
     imageAlt: 'Tree plantation campaign',
   },
   {
@@ -67,7 +75,7 @@ const SAMPLES_PROJECTS: Project[] = [
     impact: 'Trained 45 village birthing practitioners',
     status: 'completed',
     date: 'Nov 2024',
-    imageUrl: '/src/assets/images/midwifery_seminar_1780771335286.png',
+    imageUrl: midwiferySeminarImg,
     imageAlt: 'Midwives certification seminar',
   },
 ];
